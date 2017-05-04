@@ -6,12 +6,12 @@
 
     <groupId>mihanvr</groupId>
     <artifactId>spring-boot-admin-docker</artifactId>
-    <version>1.4.3</version>
+    <version>1.5.0</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.4.0.RELEASE</version>
+        <version>1.5.3.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -29,12 +29,12 @@
         <dependency>
             <groupId>de.codecentric</groupId>
             <artifactId>spring-boot-admin-server</artifactId>
-            <version>1.4.3</version>
+            <version>1.5.0</version>
         </dependency>
         <dependency>
             <groupId>de.codecentric</groupId>
             <artifactId>spring-boot-admin-server-ui</artifactId>
-            <version>1.4.3</version>
+            <version>1.5.0</version>
         </dependency>
     </dependencies>
 
@@ -47,7 +47,7 @@
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
-                <version>0.4.11</version>
+                <version>0.4.13</version>
                 <configuration>
                     <imageName>mihanvr/spring-boot-admin-docker:${project.version}</imageName>
                     <dockerDirectory>src/main/docker</dockerDirectory>
@@ -68,7 +68,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Brixton.SR4</version>
+                <version>Camden.SR6</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
